@@ -77,7 +77,8 @@ namespace OiM_UWP.Views
             return points;
         }
 
-        private async Point[] generatePointList(TextBox[,] points)
+        
+        private Point[] generatePointList(TextBox[,] points)
         {
             Point[] pointsList = new Point[points.GetLength(0)];
 
@@ -89,8 +90,7 @@ namespace OiM_UWP.Views
                 }
                 catch(Exception exp)
                 {
-                    ContentDialog dialog = new ContentDialog { Title = "Error", Content = exp.Message, CloseButtonText = "ok" };
-                    ContentDialogResult result = await dialog.ShowAsync();
+                   Utilities.showErrorMessage(exp.Message);
                 }          
             }
 

@@ -36,14 +36,14 @@
                     <ColumnDefinition Width="200" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <ScrollViewer x:ConnectionId='8' Visibility="Collapsed" x:Name="treeScrollViewer" Padding="10" Grid.Column="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="10,0,10,10" Background="{ThemeResource SystemAccentColor}">
-                    <Canvas x:ConnectionId='10' x:Name="matrixGrid">
-                        <Canvas.ChildrenTransitions>
+                <ScrollViewer x:ConnectionId='8' Visibility="Visible" x:Name="treeScrollViewer" Padding="10" Grid.Column="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="10,0,10,10" Background="{ThemeResource SystemAccentColor}">
+                    <Grid x:ConnectionId='10' x:Name="matrixGrid">
+                        <Grid.ChildrenTransitions>
                             <TransitionCollection>
                                 <EntranceThemeTransition FromHorizontalOffset="100" />
                             </TransitionCollection>
-                        </Canvas.ChildrenTransitions>
-                    </Canvas>
+                        </Grid.ChildrenTransitions>
+                    </Grid>
                 </ScrollViewer>
                 <ScrollViewer Grid.Column="0" Margin="10,0,10,10" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
                     <Grid Background="{ThemeResource SystemAccentColor}">

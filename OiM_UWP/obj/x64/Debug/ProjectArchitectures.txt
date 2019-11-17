@@ -1,1 +1,1 @@
-C:\Users\games\source\repos\OiM_UWP\OiM_UWP\OiM_UWP.csproj;x64
+C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\OiM_UWP.csproj;x64

@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="OiM_UWP.Views.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OiM_UWP.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Background="{ThemeResource SystemControlAccentAcrylicWindowAccentMediumHighBrush}">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Center"  Text="Twórcy" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="35" />
+        <TextBlock HorizontalAlignment="Center"  Text="Karol Chryczyk" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" FontSize="35" Margin="0,130,0,0" />
+        <TextBlock HorizontalAlignment="Center"  Text="Sławomir Jurczak" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" FontSize="30" Margin="0,222,0,0" />
+    </Grid>
+</Page>
