@@ -1,0 +1,117 @@
+﻿<Page
+    x:Class="OiM_UWP.Views.ArithmeticView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OiM_UWP.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{x:Null}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="200" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Background="{ThemeResource AppBarBackgroundThemeBrush}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.Transitions>
+                    <TransitionCollection>
+                        <EntranceThemeTransition FromHorizontalOffset="100" />
+
+                    </TransitionCollection>
+                </Grid.Transitions>
+                <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Kodowanie Arytmetyczne" FontSize="24" Height="Auto"
+                         Width="Auto" Margin="10,10,-10,-10" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                </TextBlock>
+                <TextBlock  Margin="15,40,15,0" TextWrapping="Wrap">Kodowanie arytmetyczne – metoda kodowania źródłowego dyskretnych źródeł sygnałów, stosowana jako jeden z systemów w bezstratnej kompresji danych. Została wynaleziona przez Petera Eliasa około 1960 roku. Od roku 2014 zostaje zastępowane kodowaniem Asymmetric Numeral Systems, które pozwala na szybsze implementacje przy podobnym stopniu kompresji.</TextBlock>
+            </Grid>
+            <Grid Margin="0,174,0,0" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="100" />
+                </Grid.RowDefinitions>
+              <ScrollViewer Grid.Row="0" Grid.Column="0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="5">
+                    <Grid x:Name="alphabetGrid" Padding="5" Background="{ThemeResource SystemAccentColor}" Visibility="Collapsed">
+                      <Grid.ChildrenTransitions>
+                        <TransitionCollection>
+                          <EntranceThemeTransition 
+                            FromVerticalOffset="200"/>
+                        </TransitionCollection>
+                      </Grid.ChildrenTransitions>
+                    </Grid>
+                </ScrollViewer>
+              <ScrollViewer Grid.Row="0" Grid.Column="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="5">
+                <StackPanel x:Name="subIntervalsGrid" Padding="5"  Background="{ThemeResource SystemAccentColor}" Visibility="Collapsed">
+                  <StackPanel.ChildrenTransitions>
+                    <TransitionCollection>
+                      <EntranceThemeTransition 
+                        FromVerticalOffset="200"/>
+                    </TransitionCollection>
+                  </StackPanel.ChildrenTransitions>
+                </StackPanel>
+              </ScrollViewer>
+                <Grid x:Name="resultCodingGrid" Grid.Row="1" Grid.Column="0" Visibility="Collapsed" Background="{ThemeResource SystemAccentColor}" Margin="5">
+                    <TextBlock x:Name="resultCodingTextBlock" Text="" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid x:Name="resultDeCodingGrid" Grid.Row="1" Grid.Column="1" Visibility="Collapsed" Background="{ThemeResource SystemAccentColor}" Margin="5">
+                <TextBlock x:Name="resultDecodingTextBlock" Text="" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Grid>
+            </Grid>
+
+        </Grid>
+        <ScrollViewer Grid.Column="1" Background="{ThemeResource SystemAccentColor}">
+
+            <StackPanel Orientation="Vertical">
+
+                <ListViewHeaderItem Content="Ustawienia" />
+                <StackPanel>
+
+                    <Button Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2" Click="Generate">
+                        <StackPanel Orientation="Horizontal">
+                            <SymbolIcon Symbol="RepeatAll" />
+                            <TextBlock Text="Generuj" Margin="10" />
+                        </StackPanel>
+                    </Button>
+                  <Button Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2" Click="GenerateAlphabet">
+                    <StackPanel Orientation="Horizontal">
+                      <SymbolIcon Symbol="Font" />
+                      <TextBlock Text="Generuj Alfabet" Margin="10" />
+                    </StackPanel>
+                  </Button>
+                    <Button  Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2" Click="Calculate">
+                        <StackPanel Orientation="Horizontal">
+                            <PathIcon  VerticalAlignment="Center" Width="24" Height="24" Data="M3,11H5V13H3V11M11,5H13V9H11V5M9,11H13V15H11V13H9V11M15,11H17V13H19V11H21V13H19V15H21V19H19V21H17V19H13V21H11V17H15V15H17V13H15V11M19,19V15H17V19H19M15,3H21V9H15V3M17,5V7H19V5H17M3,3H9V9H3V3M5,5V7H7V5H5M3,15H9V21H3V15M5,17V19H7V17H5Z" />
+                            <TextBlock Text="Koduj" Margin="10" />
+                        </StackPanel>
+                    </Button>
+
+                    <Button  Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2" Click="Decode">
+                        <StackPanel Orientation="Horizontal">
+                            <PathIcon VerticalAlignment="Center"  Width="24" Height="24" Data="M5,5H7V7H5V5M1,1H11V11H1V1M3,3V9H9V3H3M5,17H7V19H5V17M1,13H11V23H1V13M3,15V21H9V15H3M13,13H17V15H19V13H23V15H19V17H23V23H19V21H15V23H13V21H15V19H13V13M21,21V19H19V21H21M19,17H17V15H15V19H19V17M22.7,3.35L21.7,4.35L19.65,2.35L20.65,1.35C20.85,1.14 21.19,1.13 21.42,1.35L22.7,2.58C22.91,2.78 22.92,3.12 22.7,3.35M13,8.94L19.07,2.88L21.12,4.93L15.06,11H13V8.94Z" />
+                            <TextBlock Text="Dekoduj" Margin="10" />
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+                <ListViewHeaderItem Content="Alfabet" />
+                <TextBox x:Name="letterCountTextBox" Header="Liczba liter:" PlaceholderText="ilość" InputScope="Number" />
+                <TextBox x:Name="alphabetTextBox" AutomationProperties.Name="multi-line TextBox"
+                         TextWrapping="Wrap" AcceptsReturn="True" IsSpellCheckEnabled="True" Header="Tekst jako alfabet:" PlaceholderText="tekst"/>
+                <ListViewHeaderItem Content="Kodowanie" />
+                <TextBox x:Name="messageTextBox" AutomationProperties.Name="multi-line TextBox"
+                         TextWrapping="Wrap" AcceptsReturn="True" IsSpellCheckEnabled="True" Header="Wiadomość do zakodowania:" PlaceholderText="tekst"/>
+                <ListViewHeaderItem Content="Dekodowanie" />
+                <TextBox x:Name="messageToDecodeTextBox" Header="Liczba do zdekodowania:" PlaceholderText="liczba" InputScope="Number"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
