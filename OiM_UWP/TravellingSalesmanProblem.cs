@@ -8,15 +8,13 @@ namespace OiM_UWP
 {
     class TravellingSalesmanProblem
     {
-        public static int CheckCoordinatesCorrectness(Point bottom_vertex, Point upper_vertex, double x, double y)
+        public static void CheckCoordinatesCorrectness(Point bottom_vertex, Point upper_vertex, double x, double y)
         {
             if (x < bottom_vertex.GetX() || y < bottom_vertex.GetY() ||
                 x > upper_vertex.GetX() || y > upper_vertex.GetY())
             {
-                return 1;
+                throw new Exception("Otwor znajduje sie poza prostokatem. Podaj poprawne wspolrzedne");
             }
-
-            return 0;
         }
 
         public static double Distance(Point first_point, Point second_point)
@@ -39,18 +37,6 @@ namespace OiM_UWP
             return distances;
         }
 
-        public static void ShowDistancesMatrix(double[,] distances_matrix)
-        {
-            for (int i = 0; i < distances_matrix.GetLength(0); i++)
-            {
-                for (int j = 0; j < distances_matrix.GetLength(1); j++)
-                {
-                    Console.Write(distances_matrix[i, j] + " ");
-                }
-                Console.WriteLine();
-            }
-        }
-
         public static double[] CreateDistancesTable(double[,] distances_matrix, int starting_vertex)
         {
             double[] distances_table = new double[distances_matrix.GetLength(0)];
@@ -59,24 +45,6 @@ namespace OiM_UWP
                 distances_table[i] = distances_matrix[starting_vertex, i];
             }
             return distances_table;
-        }
-
-        public static void ShowArray(double[] array)
-        {
-            for (int i = 0; i < array.GetLength(0); i++)
-            {
-                Console.Write(array[i] + " ");
-            }
-            Console.WriteLine();
-        }
-
-        public static void ShowArray2(List<int> list)
-        {
-            for (int i = 0; i < list.Count; i++)
-            {
-                Console.Write(list[i] + " ");
-            }
-            Console.WriteLine();
         }
 
         public static int FindMaxTableElementVertex(double[] distances_array)
@@ -161,29 +129,11 @@ namespace OiM_UWP
                             min_index = i + 1;
                         }
                     }
-                    Console.WriteLine();
-                    Console.WriteLine("Iteracja nr " + i);
-                    Console.WriteLine("x = " + x);
-                    Console.WriteLine("y = " + y);
-                    Console.WriteLine();
-                    ShowArray2(vertices_array);
-                    Console.WriteLine();
-                    ShowDistancesMatrix(diststances_matrix);
-                    Console.WriteLine();
-                    Console.WriteLine("x max_index = " + diststances_matrix[x, max_index]);
-                    Console.WriteLine("max_index y = " + diststances_matrix[max_index, y]);
-                    Console.WriteLine("x y = " + diststances_matrix[x, y]);
-                    Console.WriteLine("max_index = " + max_index);
-                    Console.WriteLine("min wynosi: " + min);
-                    Console.WriteLine("Koszt wynosi: " + cost);
-                    Console.WriteLine();
                 }
                 cost = min;
             }
             result[0] = cost;
             result[1] = min_index;
-            Console.WriteLine("Result koszt wynosi: " + result[0]);
-            Console.WriteLine("Result min_index wynosi: " + result[1]);
 
             return result;
 

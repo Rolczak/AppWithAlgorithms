@@ -13,3 +13,4 @@
         <TextBlock HorizontalAlignment="Center"  Text="Sławomir Jurczak" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" FontSize="35" Margin="0,222,0,0" />
     </Grid>
 </Page>
+

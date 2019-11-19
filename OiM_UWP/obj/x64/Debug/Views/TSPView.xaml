@@ -35,9 +35,10 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="200" />
                     <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="200" />
                 </Grid.ColumnDefinitions>
-                <ScrollViewer x:ConnectionId='8' Visibility="Visible" x:Name="treeScrollViewer" Padding="10" Grid.Column="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="10,0,10,10" Background="{ThemeResource SystemAccentColor}">
-                    <Grid x:ConnectionId='10' x:Name="matrixGrid">
+                <ScrollViewer x:ConnectionId='13' Visibility="Visible" x:Name="treeScrollViewer" Padding="10" Grid.Column="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="10,0,10,10" Background="{ThemeResource SystemAccentColor}">
+                    <Grid x:ConnectionId='18' x:Name="matrixGrid">
                         <Grid.ChildrenTransitions>
                             <TransitionCollection>
                                 <EntranceThemeTransition FromHorizontalOffset="100" />
@@ -48,7 +49,7 @@
                 <ScrollViewer Grid.Column="0" Margin="10,0,10,10" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
                     <Grid Background="{ThemeResource SystemAccentColor}">
                     <TextBlock Text="Tablica punktów" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                    <StackPanel x:ConnectionId='9' x:Name="pointsTable"  Margin="0,24,0,0" >
+                    <StackPanel x:ConnectionId='17' x:Name="pointsTable"  Margin="0,24,0,0" >
                         <StackPanel.ChildrenTransitions>
                             <TransitionCollection>
                                 <EntranceThemeTransition FromHorizontalOffset="100" />
@@ -57,6 +58,16 @@
                     </StackPanel>
                     </Grid>
                 </ScrollViewer>
+                <Grid x:ConnectionId='14' x:Name="resultGrid" Grid.Column="3" Visibility="Visible" Width="180" Height="100" VerticalAlignment="Top" Background="{ThemeResource SystemAccentColor}">
+                    <StackPanel>
+                        <TextBlock Text="Koszt trasy:" HorizontalAlignment="Center"/>
+                        <TextBlock x:ConnectionId='15' x:Name="cost" HorizontalAlignment="Center"/>
+                        <TextBlock Text="Trasa:" HorizontalAlignment="Center"/>
+                        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Hidden" Height="40">
+                            <TextBlock x:ConnectionId='16' x:Name="route" HorizontalAlignment="Left" TextWrapping="NoWrap"/>
+                        </ScrollViewer>
+                    </StackPanel>
+                </Grid>
             </Grid>
         </Grid>
         <ScrollViewer Grid.Column="1" Background="{ThemeResource SystemAccentColor}">
@@ -66,32 +77,26 @@
                 <ListViewHeaderItem Content="Ustawienia" />
                 <StackPanel>
 
-                    <Button Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2" >
+                    <Button x:ConnectionId='9' Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2"                      >
                         <StackPanel Orientation="Horizontal">
                             <SymbolIcon Symbol="OpenFile" />
                             <TextBlock Text="Otwórz Plik" Margin="10" />
                         </StackPanel>
                     </Button>
-                    <Button Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2">
+                    <Button x:ConnectionId='10' Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2"                       >
                         <StackPanel Orientation="Horizontal">
-                            <SymbolIcon Symbol="Save" />
-                            <TextBlock Text="Zapisz Plik" Margin="10" />
+                            <SymbolIcon Symbol="Add" />
+                            <TextBlock Text="Wprowadź punkty" Margin="10" />
                         </StackPanel>
                     </Button>
-                    <Button x:ConnectionId='7' Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2"                       >
-                        <StackPanel Orientation="Horizontal">
-                            <SymbolIcon Symbol="RepeatAll" />
-                            <TextBlock Text="Generuj punkty" Margin="10" />
-                        </StackPanel>
-                    </Button>
-                    <Button Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2">
+                    <Button x:ConnectionId='11' Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2"                 >
                         <StackPanel Orientation="Horizontal">
                             <SymbolIcon Symbol="RepeatAll" />
                             <TextBlock Text="Generuj" Margin="10" />
                         </StackPanel>
                     </Button>
 
-                    <Button Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2">
+                    <Button x:ConnectionId='12' Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2"                  >
                         <StackPanel Orientation="Horizontal">
                             <SymbolIcon Symbol="Calculator" />
                             <TextBlock Text="Licz" Margin="10" />
@@ -99,14 +104,25 @@
                     </Button>
                 </StackPanel>
                 <ListViewHeaderItem Content="Konfiguracja" />
-                <TextBox x:ConnectionId='2' x:Name="vertexATextBox" Header="Podaj współrzędne wierzchołka A:" PlaceholderText="0,0" Margin="10,10,10,0"
-                 InputScope="Text" />
-                <TextBox x:ConnectionId='3' x:Name="vertexBTextBox" Header="Podaj współrzędne wierzchołka B:" PlaceholderText="1,1" Margin="10,10,10,0"
-                 InputScope="Text" />
-                <TextBox x:ConnectionId='4' x:Name="holesQuantityTextBox" Header="Podaj liczbę otworów:" PlaceholderText="Ilość otworów" Margin="10,10,10,0"
-                 InputScope="Number" />
-                <RadioButton x:ConnectionId='5' x:Name="randomRadioButton" Content="Losowo" Margin="10,10,10,0"/>
-                <RadioButton x:ConnectionId='6' x:Name="holesRadioButton" Content="Według punktów" Margin="10,10,10,0"/>
+                <TextBox x:ConnectionId='2' x:Name="holesQuantityTextBox" Header="Podaj liczbę punktów:" PlaceholderText="Ilość otworów" Margin="10,10,10,0"
+                 InputScope="Number" Text="1"/>
+                <TextBlock Margin="10,10,10,0"> Sposób generowania: </TextBlock>
+                <RadioButton x:ConnectionId='3' x:Name="randomRadioButton" Content="Losowo" Margin="10,10,10,0" IsChecked="True" />
+                <RadioButton x:ConnectionId='4' x:Name="holesRadioButton" Content="Według punktów" Margin="10,10,10,0"/>
+                <TextBlock Margin="10,10,10,0"> Podaj współrzędne punktu A </TextBlock>
+                <StackPanel Orientation="Horizontal">
+                <TextBox x:ConnectionId='7' x:Name="vertexAxTextBox"  PlaceholderText="0" Margin="10,10,10,0"
+                 InputScope="Text" Text="0" />
+                <TextBox x:ConnectionId='8' x:Name="vertexAyTextBox"  PlaceholderText="0" Margin="10,10,10,0"
+                 InputScope="Text" Text="0" />
+                </StackPanel>
+                <TextBlock Margin="10,10,10,0"> Podaj współrzędne punktu B </TextBlock>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:ConnectionId='5' x:Name="vertexBxTextBox" PlaceholderText="100" Margin="10,10,10,0"
+                 InputScope="Text" Text="100"/>
+                    <TextBox x:ConnectionId='6' x:Name="vertexByTextBox" PlaceholderText="100" Margin="10,10,10,0"
+                 InputScope="Text" Text="100"/>
+                </StackPanel>
             </StackPanel>
         </ScrollViewer>
     </Grid>

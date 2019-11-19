@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>ROLCZAK-DESKTOP</Machine>
-    <WindowsUser>kcrol</WindowsUser>
+    <Machine>DESKTOP-9FRC821</Machine>
+    <WindowsUser>games</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>141cb84e-d138-4b9e-be6e-15bea20df7bf</PackageIdentityName>
     <PackageIdentityPublisher>CN=kcrol</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>FDFD9780EE1E324FEE164C5F7F3806F2966534F1219B37C73CC522BF4FF2B2C9</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>5F75EBF16197829C326A9012073C8D8513AF39E6E38712BA2DC1E74C21BF809C</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>141cb84e-d138-4b9e-be6e-15bea20df7bf_1.0.0.0_x64__w1prqkxk4rda0</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>141cb84e-d138-4b9e-be6e-15bea20df7bf_w1prqkxk4rda0!App</RegisteredUserModeAppID>
     <RegisteredPackageID>141cb84e-d138-4b9e-be6e-15bea20df7bf</RegisteredPackageID>
@@ -27,182 +27,182 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-11-17T17:23:50.258</Modified>
+      <Modified>2019-11-19T20:21:15.008</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\bin\x64\Debug\OiM_UWP.exe">
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\OiM_UWP.exe">
       <PackagePath>entrypoint\OiM_UWP.exe</PackagePath>
-      <Modified>2019-11-17T17:23:49.376</Modified>
+      <Modified>2019-11-19T20:21:13.411</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
+    <AppxPackagedFile Include="C:\Users\games\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
       <Modified>2018-10-05T21:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\.nuget\packages\colorcode.uwp\2.0.6\lib\uap10.0\ColorCode.UWP.dll">
+    <AppxPackagedFile Include="C:\Users\games\.nuget\packages\colorcode.uwp\2.0.6\lib\uap10.0\ColorCode.UWP.dll">
       <PackagePath>ColorCode.UWP.dll</PackagePath>
       <Modified>2018-10-05T21:30:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\.nuget\packages\microsoft.toolkit\5.1.1\lib\netstandard2.0\Microsoft.Toolkit.dll">
+    <AppxPackagedFile Include="C:\Users\games\.nuget\packages\microsoft.toolkit\5.1.1\lib\netstandard2.0\Microsoft.Toolkit.dll">
       <PackagePath>Microsoft.Toolkit.dll</PackagePath>
       <Modified>2019-03-15T21:15:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\.nuget\packages\microsoft.toolkit.parsers\5.1.1\lib\netstandard2.0\Microsoft.Toolkit.Parsers.dll">
+    <AppxPackagedFile Include="C:\Users\games\.nuget\packages\microsoft.toolkit.parsers\5.1.1\lib\netstandard2.0\Microsoft.Toolkit.Parsers.dll">
       <PackagePath>Microsoft.Toolkit.Parsers.dll</PackagePath>
       <Modified>2019-03-15T21:15:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\.nuget\packages\microsoft.toolkit.uwp\5.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.dll">
+    <AppxPackagedFile Include="C:\Users\games\.nuget\packages\microsoft.toolkit.uwp\5.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.dll</PackagePath>
       <Modified>2019-03-15T21:15:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\.nuget\packages\microsoft.toolkit.uwp.ui\5.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.dll">
+    <AppxPackagedFile Include="C:\Users\games\.nuget\packages\microsoft.toolkit.uwp.ui\5.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.dll</PackagePath>
       <Modified>2019-03-15T21:15:54.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\.nuget\packages\microsoft.toolkit.uwp.ui.animations\5.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Animations.dll">
+    <AppxPackagedFile Include="C:\Users\games\.nuget\packages\microsoft.toolkit.uwp.ui.animations\5.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Animations.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Animations.dll</PackagePath>
       <Modified>2019-03-15T21:15:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.dll">
+    <AppxPackagedFile Include="C:\Users\games\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.dll</PackagePath>
       <Modified>2019-03-15T21:49:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll">
+    <AppxPackagedFile Include="C:\Users\games\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll</PackagePath>
       <Modified>2019-02-12T21:34:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
+    <AppxPackagedFile Include="C:\Users\games\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
       <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
       <Modified>2016-02-22T12:59:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactivity.dll">
+    <AppxPackagedFile Include="C:\Users\games\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactivity.dll">
       <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
       <Modified>2016-02-22T12:59:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\.nuget\packages\newtonsoft.json\10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\games\.nuget\packages\newtonsoft.json\10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
       <Modified>2017-06-18T11:57:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\.nuget\packages\robmikh.compositionsurfacefactory\0.7.3\runtimes\win10-x64\native\Robmikh.CompositionSurfaceFactory.dll">
+    <AppxPackagedFile Include="C:\Users\games\.nuget\packages\robmikh.compositionsurfacefactory\0.7.3\runtimes\win10-x64\native\Robmikh.CompositionSurfaceFactory.dll">
       <PackagePath>Robmikh.CompositionSurfaceFactory.dll</PackagePath>
       <Modified>2017-09-27T17:20:54.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
-      <Modified>2019-07-22T12:01:12.000</Modified>
+      <Modified>2019-07-22T13:01:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\.nuget\packages\win2d.uwp\1.21.0\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
+    <AppxPackagedFile Include="C:\Users\games\.nuget\packages\win2d.uwp\1.21.0\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2017-06-26T01:01:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\.nuget\packages\robmikh.compositionsurfacefactory\0.7.3\lib\uap10.0\Robmikh.CompositionSurfaceFactory.winmd">
+    <AppxPackagedFile Include="C:\Users\games\.nuget\packages\robmikh.compositionsurfacefactory\0.7.3\lib\uap10.0\Robmikh.CompositionSurfaceFactory.winmd">
       <PackagePath>Robmikh.CompositionSurfaceFactory.winmd</PackagePath>
       <Modified>2017-09-27T17:20:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\.nuget\packages\win2d.uwp\1.21.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+    <AppxPackagedFile Include="C:\Users\games\.nuget\packages\win2d.uwp\1.21.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
       <Modified>2017-06-26T01:01:44.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
-      <Modified>2019-03-18T16:36:56.000</Modified>
+      <Modified>2019-03-18T17:36:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2019-11-17T16:40:05.105</Modified>
+      <Modified>2019-11-09T12:41:20.738</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2019-11-17T16:40:05.090</Modified>
+      <Modified>2019-10-15T09:16:08.174</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-11-17T16:40:05.091</Modified>
+      <Modified>2019-10-15T09:16:08.174</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-11-17T16:40:05.092</Modified>
+      <Modified>2019-10-15T09:16:08.174</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-11-17T16:40:05.093</Modified>
+      <Modified>2019-10-15T09:16:08.174</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-11-17T16:40:05.094</Modified>
+      <Modified>2019-10-15T09:16:08.174</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-11-17T16:40:05.094</Modified>
+      <Modified>2019-10-15T09:16:08.174</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-11-17T16:40:05.095</Modified>
+      <Modified>2019-10-15T09:16:08.174</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\bin\x64\Debug\OiM_UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\OiM_UWP.xr.xml">
       <PackagePath>OiM_UWP.xr.xml</PackagePath>
-      <Modified>2019-11-17T17:23:49.085</Modified>
+      <Modified>2019-11-19T20:21:12.898</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\bin\x64\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-11-17T17:23:49.125</Modified>
+      <Modified>2019-11-19T20:21:12.952</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\bin\x64\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-11-17T17:23:49.106</Modified>
+      <Modified>2019-11-19T20:21:12.928</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\bin\x64\Debug\Views\About.xbf">
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Views\About.xbf">
       <PackagePath>Views\About.xbf</PackagePath>
-      <Modified>2019-11-17T17:23:49.126</Modified>
+      <Modified>2019-11-19T20:21:12.954</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\bin\x64\Debug\Views\ArithmeticView.xbf">
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Views\ArithmeticView.xbf">
       <PackagePath>Views\ArithmeticView.xbf</PackagePath>
-      <Modified>2019-11-17T17:23:49.112</Modified>
+      <Modified>2019-11-19T20:21:12.935</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\bin\x64\Debug\Views\HuffmanView.xbf">
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Views\HuffmanView.xbf">
       <PackagePath>Views\HuffmanView.xbf</PackagePath>
-      <Modified>2019-11-17T17:23:49.114</Modified>
+      <Modified>2019-11-19T20:21:12.956</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\bin\x64\Debug\Views\HungarianView.xbf">
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Views\HungarianView.xbf">
       <PackagePath>Views\HungarianView.xbf</PackagePath>
-      <Modified>2019-11-17T17:23:49.127</Modified>
+      <Modified>2019-11-19T20:21:12.957</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\bin\x64\Debug\Views\KnapsackView.xbf">
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Views\KnapsackView.xbf">
       <PackagePath>Views\KnapsackView.xbf</PackagePath>
-      <Modified>2019-11-17T17:23:49.121</Modified>
+      <Modified>2019-11-19T20:21:12.946</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\bin\x64\Debug\Views\TSPView.xbf">
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Views\TSPView.xbf">
       <PackagePath>Views\TSPView.xbf</PackagePath>
-      <Modified>2019-11-17T17:23:49.125</Modified>
+      <Modified>2019-11-19T20:21:12.952</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2019-03-18T15:33:42.000</Modified>
+      <Modified>2019-03-18T16:33:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml">
+    <AppxPackagedFile Include="C:\Users\games\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.1.1\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml</PackagePath>
       <Modified>2019-03-15T21:44:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml">
+    <AppxPackagedFile Include="C:\Users\games\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\5.1.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml</PackagePath>
       <Modified>2019-02-12T21:29:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-11-17T17:09:57.203</Modified>
+      <Modified>2019-11-19T10:57:56.800</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\bin\x64\Debug\Core\OiM_UWP.exe">
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Core\OiM_UWP.exe">
       <PackagePath>OiM_UWP.exe</PackagePath>
-      <Modified>2019-11-17T17:23:50.252</Modified>
+      <Modified>2019-11-19T20:21:14.981</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

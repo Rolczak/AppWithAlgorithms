@@ -68,26 +68,6 @@
 
                 <ListViewHeaderItem Content="Ustawienia" />
                 <StackPanel>
-
-                    <Button Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2">
-                        <StackPanel Orientation="Horizontal">
-                            <SymbolIcon Symbol="OpenFile" />
-                            <TextBlock Text="Otwórz Plik" Margin="10" />
-                        </StackPanel>
-                    </Button>
-                    <Button Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2">
-                        <StackPanel Orientation="Horizontal">
-                            <SymbolIcon Symbol="Save" />
-                            <TextBlock Text="Zapisz Plik" Margin="10" />
-                        </StackPanel>
-                    </Button>
-                    <Button Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2">
-                        <StackPanel Orientation="Horizontal">
-                            <SymbolIcon Symbol="RepeatAll" />
-                            <TextBlock Text="Generuj" Margin="10" />
-                        </StackPanel>
-                    </Button>
-
                     <Button x:ConnectionId='3'                   Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2">
                         <StackPanel Orientation="Horizontal">
                             <SymbolIcon Symbol="Calculator" />
