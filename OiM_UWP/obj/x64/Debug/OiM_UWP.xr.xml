@@ -49,15 +49,15 @@
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.NavigationViewItemSeparator" />
+    <RootType FullName="Windows.UI.Xaml.Controls.FontIcon">
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Glyph" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.PathIcon">
       <RootProperty Name="Data" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.FontIcon">
-      <RootProperty Name="FontFamily" />
-      <RootProperty Name="Glyph" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
       <RootEvent Name="NavigationFailed" />
@@ -89,6 +89,7 @@
       <RootProperty Name="Visibility" />
       <RootProperty Name="Padding" />
       <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Orientation" />
@@ -145,6 +146,7 @@
     </RootType>
     <RootType FullName="OiM_UWP.Views.HungarianView" />
     <RootType FullName="OiM_UWP.Views.KnapsackView" />
+    <RootType FullName="OiM_UWP.Views.LZWView" />
     <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />

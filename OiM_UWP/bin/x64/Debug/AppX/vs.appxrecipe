@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-11-19T20:21:15.008</Modified>
+      <Modified>2019-11-24T20:33:38.909</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\OiM_UWP.exe">
       <PackagePath>entrypoint\OiM_UWP.exe</PackagePath>
-      <Modified>2019-11-19T20:21:13.411</Modified>
+      <Modified>2019-11-24T20:33:37.368</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\games\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -150,39 +150,43 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\OiM_UWP.xr.xml">
       <PackagePath>OiM_UWP.xr.xml</PackagePath>
-      <Modified>2019-11-19T20:21:12.898</Modified>
+      <Modified>2019-11-24T19:57:30.577</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-11-19T20:21:12.952</Modified>
+      <Modified>2019-11-24T20:33:36.907</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-11-19T20:21:12.928</Modified>
+      <Modified>2019-11-24T20:33:36.876</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Views\About.xbf">
       <PackagePath>Views\About.xbf</PackagePath>
-      <Modified>2019-11-19T20:21:12.954</Modified>
+      <Modified>2019-11-24T20:33:36.908</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Views\ArithmeticView.xbf">
       <PackagePath>Views\ArithmeticView.xbf</PackagePath>
-      <Modified>2019-11-19T20:21:12.935</Modified>
+      <Modified>2019-11-24T20:33:36.882</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Views\HuffmanView.xbf">
       <PackagePath>Views\HuffmanView.xbf</PackagePath>
-      <Modified>2019-11-19T20:21:12.956</Modified>
+      <Modified>2019-11-24T20:33:36.909</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Views\HungarianView.xbf">
       <PackagePath>Views\HungarianView.xbf</PackagePath>
-      <Modified>2019-11-19T20:21:12.957</Modified>
+      <Modified>2019-11-24T20:33:36.909</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Views\KnapsackView.xbf">
       <PackagePath>Views\KnapsackView.xbf</PackagePath>
-      <Modified>2019-11-19T20:21:12.946</Modified>
+      <Modified>2019-11-24T20:33:36.893</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Views\LZWView.xbf">
+      <PackagePath>Views\LZWView.xbf</PackagePath>
+      <Modified>2019-11-24T20:33:36.909</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Views\TSPView.xbf">
       <PackagePath>Views\TSPView.xbf</PackagePath>
-      <Modified>2019-11-19T20:21:12.952</Modified>
+      <Modified>2019-11-24T20:33:36.907</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -198,11 +202,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-11-19T10:57:56.800</Modified>
+      <Modified>2019-11-24T19:57:32.120</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Core\OiM_UWP.exe">
       <PackagePath>OiM_UWP.exe</PackagePath>
-      <Modified>2019-11-19T20:21:14.981</Modified>
+      <Modified>2019-11-24T20:33:38.899</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

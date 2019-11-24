@@ -14,5 +14,6 @@ Views\ArithmeticView.xbf
 Views\HuffmanView.xbf
 Views\HungarianView.xbf
 Views\KnapsackView.xbf
+Views\LZWView.xbf
 Views\TSPView.xbf
 Properties\Default.rd.xml

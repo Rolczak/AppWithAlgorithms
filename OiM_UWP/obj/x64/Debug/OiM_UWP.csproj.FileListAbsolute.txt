@@ -654,3 +654,8 @@ C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\obj\x64\Debug\.winmd_cache\$Micr
 C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885238160000000.json
 C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885274160000000.json
 C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\obj\x64\Debug\.winmd_cache\$Robmikh.CompositionSurfaceFactory.winmd_636421296520000000.json
+C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\obj\x64\Debug\Views\LZWView.g.i.cs
+C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\obj\x64\Debug\Views\LZWView.g.cs
+C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\obj\x64\Debug\Views\LZWView.xaml
+C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\obj\x64\Debug\Views\LZWView.xbf
+C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Views\LZWView.xbf

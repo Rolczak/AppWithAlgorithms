@@ -126,6 +126,7 @@
     <Compile Include="HungarianAlgorithm.cs" />
     <Compile Include="Interval.cs" />
     <Compile Include="KnapsackProblem.cs" />
+    <Compile Include="LZW.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -148,6 +149,9 @@
     </Compile>
     <Compile Include="Views\KnapsackView.xaml.cs">
       <DependentUpon>KnapsackView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LZWView.xaml.cs">
+      <DependentUpon>LZWView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TSPView.xaml.cs">
       <DependentUpon>TSPView.xaml</DependentUpon>
@@ -194,6 +198,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\KnapsackView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LZWView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

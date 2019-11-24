@@ -136,6 +136,9 @@
     <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Views\KnapsackView.xbf">
       <PackagePath>Views\KnapsackView.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Views\LZWView.xbf">
+      <PackagePath>Views\LZWView.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\games\source\repos\OiM_UWP\OiM\OiM_UWP\bin\x64\Debug\Views\TSPView.xbf">
       <PackagePath>Views\TSPView.xbf</PackagePath>
     </AppxPackagedFile>
