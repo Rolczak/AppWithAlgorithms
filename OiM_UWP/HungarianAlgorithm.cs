@@ -121,7 +121,7 @@ namespace OiM_UWP
                 }
                 if (markedCount < matrix.getMatrix().GetLength(0))
                 {
-                    matrix = reduceMatrix(matrix, helper, matrix.getMin());
+                    matrix = reduceMatrix(matrix, helper, matrix.GetMin());
                 }
                 maxTries--;
             }

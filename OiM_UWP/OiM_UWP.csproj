@@ -124,7 +124,9 @@
     <Compile Include="HuffmanCoding.cs" />
     <Compile Include="HuffmanNode.cs" />
     <Compile Include="HungarianAlgorithm.cs" />
+    <Compile Include="IAlgorithm.cs" />
     <Compile Include="Interval.cs" />
+    <Compile Include="JohnsonAlgorithm.cs" />
     <Compile Include="KnapsackProblem.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>

@@ -19258,25 +19258,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\games\\.nuget\\packages\\": {},
+    "C:\\Users\\kcrol\\.nuget\\packages\\": {},
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\games\\source\\repos\\OiM_UWP\\OiM\\OiM_UWP\\OiM_UWP.csproj",
+      "projectUniqueName": "C:\\Users\\kcrol\\Desktop\\studia\\Wójcik\\OiM\\OiM_UWP\\OiM_UWP.csproj",
       "projectName": "OiM_UWP",
-      "projectPath": "C:\\Users\\games\\source\\repos\\OiM_UWP\\OiM\\OiM_UWP\\OiM_UWP.csproj",
-      "packagesPath": "C:\\Users\\games\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\games\\source\\repos\\OiM_UWP\\OiM\\OiM_UWP\\obj\\",
+      "projectPath": "C:\\Users\\kcrol\\Desktop\\studia\\Wójcik\\OiM\\OiM_UWP\\OiM_UWP.csproj",
+      "packagesPath": "C:\\Users\\kcrol\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kcrol\\Desktop\\studia\\Wójcik\\OiM\\OiM_UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
+        "D:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\games\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\kcrol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "uap10.0.17763"

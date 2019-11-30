@@ -23,5 +23,10 @@ namespace OiM_UWP
                 PrimaryButtonText = "OK"
             }, awaitPreviousDialog: true);
         }
+
+        public static void drawMatrix(ref Grid grid, Matrix matrix)
+        {
+
+        }
     }
 }
