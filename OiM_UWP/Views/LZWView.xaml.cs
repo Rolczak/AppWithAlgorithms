@@ -22,6 +22,8 @@ namespace OiM_UWP.Views
     /// </summary>
     public sealed partial class LZWView : Page
     {
+        Dictionary<string, int> alphabet = null;
+        List<int> encodeList = null;
         Dictionary<string, int> dictionary = new Dictionary<string, int>();
         List<int> indexes = new List<int>();
         string message;
@@ -59,12 +61,17 @@ namespace OiM_UWP.Views
 
             return pairs;
         }
-
+        private void Decode(object sender, RoutedEventArgs e)
+        {
+            resultDecode.Text = LZW.Decode(alphabet, encodeList);
+        }
         private void encodeResult(object sender, RoutedEventArgs e)
         {
             text = messageTextBox.Text.ToCharArray(0, messageTextBox.Text.Length);
             dictionary = LZW.InitializeDictionary(text);
-            result.Text = String.Join(", ",LZW.Encode(dictionary, text));
+            alphabet = new Dictionary<string, int>(dictionary);
+            encodeList = LZW.Encode(dictionary, text);
+            result.Text = String.Join(", ", encodeList);
             CreateDictionary(dictionary);
         }
     }

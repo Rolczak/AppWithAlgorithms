@@ -61,6 +61,13 @@
                             <TextBlock x:Name="result" HorizontalAlignment="Left" TextWrapping="NoWrap" Margin="5"/>
                         </StackPanel>
                     </ScrollViewer>
+
+                    <ScrollViewer Grid.Column="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Height="50" VerticalAlignment="Top" Margin="0,55,10,0">
+                        <StackPanel Visibility="Visible" Background="{ThemeResource SystemAccentColor}" >
+                            <TextBlock Text="Zdekodowana wiadomość" HorizontalAlignment="Center"/>
+                            <TextBlock x:Name="resultDecode" HorizontalAlignment="Left" TextWrapping="NoWrap" Margin="5"/>
+                        </StackPanel>
+                    </ScrollViewer>
                 </Grid>
 
 
@@ -77,6 +84,12 @@
                         <StackPanel Orientation="Horizontal">
                             <SymbolIcon Symbol="Sort" />
                             <TextBlock Text="Koduj" Margin="10" />
+                        </StackPanel>
+                    </Button>
+                    <Button Click="Decode" Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2">
+                        <StackPanel Orientation="Horizontal">
+                            <SymbolIcon Symbol="RepeatAll" />
+                            <TextBlock Text="Dekoduj" Margin="10" />
                         </StackPanel>
                     </Button>
                 </StackPanel>

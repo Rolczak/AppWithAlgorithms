@@ -54,21 +54,46 @@ namespace OiM_UWP
             return indexes;
         }
 
-        /*
-        static public List<string> Decode(Dictionary<string, int> dictionary, List<int> indexes)
+        static public string Decode(Dictionary<string, int> dictionary, List<int> code)
         {
-            List<string> message = new List<string>();
-
-            for (int i = 0; i < indexes.Count; i++)
+            try
             {
-                if (dictionary.ContainsValue(indexes[i]))
-                {
 
+
+                Dictionary<int, string> alphabet = new Dictionary<int, string>();
+
+                foreach (KeyValuePair<string, int> entry in dictionary)
+                {
+                    alphabet.Add(entry.Value, entry.Key);
                 }
+                string w = alphabet[code[0]];
+                code.RemoveAt(0);
+                StringBuilder stringBuilder = new StringBuilder(w);
+                foreach (int k in code)
+                {
+                    string entry = null;
+                    if (alphabet.ContainsKey(k))
+                        entry = alphabet[k];
+                    else if (k == alphabet.Count)
+                        entry = w + w[0];
+
+                    stringBuilder.Append(entry);
+
+                    alphabet.Add(alphabet.Count, w + entry[0]);
+
+                    w = entry;
+                }
+
+                return stringBuilder.ToString();
+            }
+            catch(Exception exp)
+            {
+                Utilities.showErrorMessage(exp.Message);
+                return "sd";
             }
 
-            return message;
+            
         }
-        */
+
     }
 }
