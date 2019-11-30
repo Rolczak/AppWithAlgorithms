@@ -24,7 +24,7 @@
               <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Metoda Węgierska" FontSize="24" Height="Auto"
                          Width="Auto" Margin="10,10,-10,-10" UseLayoutRounding="False" d:LayoutRounding="Auto">
               </TextBlock>
-              <TextBlock Margin="15,45,15,783" TextWrapping="Wrap">Metoda węgierska – algorytm pozwalający rozwiązać problem przypisania w czasie wielomianowym. Została ona dopracowana oraz opublikowana przez Harolda Kuhna w roku 1955. Została ona nazwana „metodą węgierską” z uwagi na fakt, że została ona wyprowadzona na podstawie wcześniejszych prac dwóch węgierskich matematyków: Dénesa Kőniga i Jenő Egerváry'ego.</TextBlock>
+              <TextBlock Margin="15,45,15,645" TextWrapping="Wrap">Metoda węgierska – algorytm pozwalający rozwiązać problem przypisania w czasie wielomianowym. Została ona dopracowana oraz opublikowana przez Harolda Kuhna w roku 1955. Została ona nazwana „metodą węgierską” z uwagi na fakt, że została ona wyprowadzona na podstawie wcześniejszych prac dwóch węgierskich matematyków: Dénesa Kőniga i Jenő Egerváry'ego.</TextBlock>
             </Grid>
       <Grid Margin="0,174,0,0">
                 <Grid.ColumnDefinitions>
