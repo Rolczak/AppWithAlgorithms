@@ -30,14 +30,17 @@
     <AppXManifest Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+
       <Modified>2019-11-23T15:08:48.355</Modified>
+
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\bin\x64\Debug\OiM_UWP.exe">
       <PackagePath>entrypoint\OiM_UWP.exe</PackagePath>
+
       <Modified>2019-11-23T15:08:45.681</Modified>
-    </AppxPackagedFile>
+
     <AppxPackagedFile Include="C:\Users\kcrol\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
       <Modified>2018-10-05T21:30:08.000</Modified>
@@ -158,11 +161,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-11-23T15:08:45.276</Modified>
+      <Modified>2019-11-24T20:33:36.876</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\bin\x64\Debug\Views\About.xbf">
       <PackagePath>Views\About.xbf</PackagePath>
-      <Modified>2019-11-23T15:08:45.297</Modified>
+      <Modified>2019-11-24T20:33:36.908</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kcrol\Desktop\studia\Wójcik\OiM\OiM_UWP\bin\x64\Debug\Views\ArithmeticView.xbf">
       <PackagePath>Views\ArithmeticView.xbf</PackagePath>
