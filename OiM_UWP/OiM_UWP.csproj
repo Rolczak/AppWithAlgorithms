@@ -149,6 +149,9 @@
     <Compile Include="Views\HungarianView.xaml.cs">
       <DependentUpon>HungarianView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\JohnsonView.xaml.cs">
+      <DependentUpon>JohnsonView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\KnapsackView.xaml.cs">
       <DependentUpon>KnapsackView.xaml</DependentUpon>
     </Compile>
@@ -196,6 +199,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\HungarianView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\JohnsonView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,0 +1,95 @@
+﻿<Page
+    x:Class="OiM_UWP.Views.JohnsonView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OiM_UWP.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Width="Auto" Height="Auto">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="200" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Background="{ThemeResource AppBarBackgroundThemeBrush}">
+            <Grid>
+                <Grid.Transitions>
+                    <TransitionCollection>
+                        <EntranceThemeTransition FromHorizontalOffset="100" />
+
+                    </TransitionCollection>
+                </Grid.Transitions>
+                <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Metoda Węgierska" FontSize="24" Height="Auto"
+                         Width="Auto" Margin="10,10,-10,-10" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                </TextBlock>
+                <TextBlock Margin="15,45,15,645" TextWrapping="Wrap">Algorytm Johnsona – to algorytm służący do znajdowania najkrótszych ścieżek między parami wierzchołków. </TextBlock>
+            </Grid>
+            <Grid Margin="0,174,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <ScrollViewer Grid.Column="0" Margin="5" VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Auto">
+                    <Grid x:Name="matrixGrid" Background="{ThemeResource SystemAccentColor}" Visibility="Collapsed" Padding="2">
+                        <Grid.ChildrenTransitions>
+                            <TransitionCollection>
+                                <EntranceThemeTransition 
+                                FromVerticalOffset="200"/>
+                            </TransitionCollection>
+
+                        </Grid.ChildrenTransitions>
+                    </Grid>
+                </ScrollViewer>
+
+                <Grid Grid.Column="1" x:Name="resultGrid" Height="30" Margin="5" VerticalAlignment="Top"
+              Background="{ThemeResource SystemAccentColor}" Visibility="Collapsed">
+                    <TextBlock x:Name="resultTextBlock" HorizontalAlignment="Center" VerticalAlignment="Center" Text="x" />
+                </Grid>
+            </Grid>
+
+        </Grid>
+        <ScrollViewer Grid.Column="1" Background="{ThemeResource SystemAccentColor}">
+
+            <StackPanel Orientation="Vertical">
+
+                <ListViewHeaderItem Content="Ustawienia" />
+                <StackPanel>
+
+                    <Button Click="openFileAsync" Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2">
+                        <StackPanel Orientation="Horizontal">
+                            <SymbolIcon Symbol="OpenFile" />
+                            <TextBlock Text="Otwórz Plik" Margin="10" />
+                        </StackPanel>
+                    </Button>
+                    <Button Click="saveFileAsync" Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2">
+                        <StackPanel Orientation="Horizontal">
+                            <SymbolIcon Symbol="Save" />
+                            <TextBlock Text="Zapisz Plik" Margin="10" />
+                        </StackPanel>
+                    </Button>
+                    <Button Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2" Click="Generate">
+                        <StackPanel Orientation="Horizontal">
+                            <SymbolIcon Symbol="RepeatAll" />
+                            <TextBlock Text="Generuj" Margin="10" />
+                        </StackPanel>
+                    </Button>
+
+                    <Button Click="calculateMatrix" Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2">
+                        <StackPanel Orientation="Horizontal">
+                            <SymbolIcon Symbol="Calculator" />
+                            <TextBlock Text="Licz" Margin="10" />
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+                <ListViewHeaderItem Content="Konfiguracja" />
+                <TextBox x:Name="sizeTextBox" Header="Podaj wielkość tablicy:" PlaceholderText="Wielkość" Margin="10,10,10,0"
+                 InputScope="Number" />
+                <CheckBox x:Name="randomCheckBox" Content="Losowo" Margin="10,10,10,0" />
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
