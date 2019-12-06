@@ -78,7 +78,7 @@
                         </StackPanel>
                     </Button>
 
-                    <Button Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2">
+                    <Button Style="{ThemeResource ButtonRevealStyle}" Width="200" Margin="0,2" Click="Calculate">
                         <StackPanel Orientation="Horizontal">
                             <SymbolIcon Symbol="Calculator" />
                             <TextBlock Text="Licz" Margin="10" />

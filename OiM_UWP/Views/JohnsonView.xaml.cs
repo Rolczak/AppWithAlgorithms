@@ -22,6 +22,14 @@ namespace OiM_UWP.Views
     /// </summary>
     public sealed partial class JohnsonView : Page
     {
+        private TextBox[,] costs_TextBoxes;
+        private List<int>[] lists;
+        private List<int> queue;
+        private List<string>[] axis;
+
+        private int[,] costs;
+        private TextBlock cost;
+
         public JohnsonView()
         {
             this.InitializeComponent();
@@ -29,16 +37,55 @@ namespace OiM_UWP.Views
 
         private void Generate(object sender, RoutedEventArgs e)
         {
-            Matrix matrix = new Matrix(2, 3, true);
+            int columns;
+
+            if(int.Parse(sizeTextBox.Text) < 0)
+            {
+                columns = int.Parse(sizeTextBox.Text) * -1;
+                sizeTextBox.Text = (int.Parse(sizeTextBox.Text) * -1).ToString();
+            }
+            else
+            {
+                columns = int.Parse(sizeTextBox.Text);
+            }
+
+            Matrix matrix = new Matrix(2, columns, true);
             try
             {
-                Utilities.drawMatrix(matrixGrid, matrix, Utilities.MatrixDisplayMethod.TextBoxesWithHeaders, "Masz", "Zad");
+                costs_TextBoxes = Utilities.drawMatrix(matrixGrid, matrix, Utilities.MatrixDisplayMethod.TextBoxesWithHeaders, "Masz", "Zad");
             }
             catch(Exception exp)
             {
                 Utilities.showErrorMessage(exp.Message);
+            }  
+        }
+
+        private int[,] CreateCostsMatrix(TextBox[,] cost_textBoxes)
+        {
+            int[,] cost_matrix = new int[cost_textBoxes.GetLength(0), cost_textBoxes.GetLength(1)];
+
+            for(int i=0; i< cost_textBoxes.GetLength(0); i++)
+            {
+                for(int j=0; j< cost_textBoxes.GetLength(1); j++)
+                {
+                    cost_matrix[i, j] = int.Parse(cost_textBoxes[i, j].Text);
+                }
             }
-           
+
+            return cost_matrix;
+        }
+
+        private void Calculate(object sender, RoutedEventArgs e)
+        {
+            costs = CreateCostsMatrix(costs_TextBoxes);
+            lists = JohnsonAlgorithm.CreateLists(costs);
+
+            // List<int> queue;
+            queue = JohnsonAlgorithm.ConnectLists(lists[0], lists[1]);
+            // List<string>[] axis;   Tablica list, która zawiera dwie listy. Wyświetlić jedną pod drugą i powstanie oś
+            axis = JohnsonAlgorithm.CreateTasksAxis(costs, queue);
+            // TextBlock cost
+            cost.Text = (axis[1].Count).ToString();
         }
     }
 }
