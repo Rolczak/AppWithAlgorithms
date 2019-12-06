@@ -32,6 +32,11 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="150" />
                 </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200" />
+                    <RowDefinition Height="200" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
                 <ScrollViewer Grid.Column="0" Margin="5" VerticalScrollBarVisibility="Auto"
                       HorizontalScrollBarVisibility="Auto">
                     <Grid x:Name="matrixGrid" Background="{ThemeResource SystemAccentColor}" Visibility="Visible" Padding="2">
@@ -45,10 +50,21 @@
                     </Grid>
                 </ScrollViewer>
 
-                <Grid Grid.Column="1" x:Name="resultGrid" Height="30" Margin="5" VerticalAlignment="Top"
-              Background="{ThemeResource SystemAccentColor}" Visibility="Collapsed">
-                    <TextBlock x:Name="resultTextBlock" HorizontalAlignment="Center" VerticalAlignment="Center" Text="x" />
+                <Grid Grid.Row="0" Grid.Column="1" Background="{ThemeResource SystemAccentColor}" Margin="5">
+                  <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Koszt:"/>
+                  <TextBlock x:Name="cost" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,25,0,0"/>
                 </Grid>
+
+                <ScrollViewer Grid.Row="1" Grid.Column="0" Margin="5" HorizontalScrollBarVisibility="Auto" Visibility="Collapsed" x:Name="SBResult"> 
+                    <Grid Background="{ThemeResource SystemAccentColor}">
+                        <StackPanel Orientation="Vertical" Padding="10">
+                            <TextBlock x:Name="QueueList" />
+                            <NavigationViewItemSeparator />
+                            <TextBlock x:Name="Axis1" FontFamily="Consolas" />
+                            <TextBlock x:Name="Axis2"  FontFamily="Consolas" />
+                        </StackPanel>
+                    </Grid>
+                </ScrollViewer>
             </Grid>
 
         </Grid>

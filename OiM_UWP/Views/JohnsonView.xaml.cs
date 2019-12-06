@@ -28,7 +28,7 @@ namespace OiM_UWP.Views
         private List<string>[] axis;
 
         private int[,] costs;
-        private TextBlock cost;
+
 
         public JohnsonView()
         {
@@ -79,13 +79,14 @@ namespace OiM_UWP.Views
         {
             costs = CreateCostsMatrix(costs_TextBoxes);
             lists = JohnsonAlgorithm.CreateLists(costs);
-
-            // List<int> queue;
             queue = JohnsonAlgorithm.ConnectLists(lists[0], lists[1]);
-            // List<string>[] axis;   Tablica list, która zawiera dwie listy. Wyświetlić jedną pod drugą i powstanie oś
+            QueueList.Text = "Kolejka: "+ String.Join(",", queue);
             axis = JohnsonAlgorithm.CreateTasksAxis(costs, queue);
-            // TextBlock cost
-            cost.Text = (axis[1].Count).ToString();
+            Axis1.Text = String.Join(" ", axis[0]);
+            Axis2.Text = String.Join(" ", axis[1]);
+            cost.Text = axis[1].Count.ToString();
+            Utilities.PlayFadeAnim(SBResult);
+
         }
     }
 }
