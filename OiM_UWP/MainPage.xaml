@@ -24,6 +24,11 @@
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
                 <NavigationViewItem Icon="World" Content="Problem komiwojażera" Tag="TSPView" />
+                <NavigationViewItem Content="Algorytm Johnsona" Tag="JohnsonView">
+                    <NavigationViewItem.Icon >
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE9E9;" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
                 <NavigationViewItemSeparator />
         <NavigationViewItemHeader Content="Multimedia" />
                 <NavigationViewItem Content="Kodowanie Arytmetyczne" Tag="ArithmeticView">
