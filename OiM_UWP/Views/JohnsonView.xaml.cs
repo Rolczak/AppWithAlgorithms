@@ -39,7 +39,7 @@ namespace OiM_UWP.Views
         {
             int columns;
 
-            if(int.Parse(sizeTextBox.Text) < 0)
+            if (int.Parse(sizeTextBox.Text) < 0)
             {
                 columns = int.Parse(sizeTextBox.Text) * -1;
                 sizeTextBox.Text = (int.Parse(sizeTextBox.Text) * -1).ToString();
@@ -54,19 +54,19 @@ namespace OiM_UWP.Views
             {
                 costs_TextBoxes = Utilities.drawMatrix(matrixGrid, matrix, Utilities.MatrixDisplayMethod.TextBoxesWithHeaders, "Masz", "Zad");
             }
-            catch(Exception exp)
+            catch (Exception exp)
             {
                 Utilities.showErrorMessage(exp.Message);
-            }  
+            }
         }
 
         private int[,] CreateCostsMatrix(TextBox[,] cost_textBoxes)
         {
             int[,] cost_matrix = new int[cost_textBoxes.GetLength(0), cost_textBoxes.GetLength(1)];
 
-            for(int i=0; i< cost_textBoxes.GetLength(0); i++)
+            for (int i = 0; i < cost_textBoxes.GetLength(0); i++)
             {
-                for(int j=0; j< cost_textBoxes.GetLength(1); j++)
+                for (int j = 0; j < cost_textBoxes.GetLength(1); j++)
                 {
                     cost_matrix[i, j] = int.Parse(cost_textBoxes[i, j].Text);
                 }
@@ -80,13 +80,63 @@ namespace OiM_UWP.Views
             costs = CreateCostsMatrix(costs_TextBoxes);
             lists = JohnsonAlgorithm.CreateLists(costs);
             queue = JohnsonAlgorithm.ConnectLists(lists[0], lists[1]);
-            QueueList.Text = "Kolejka: "+ String.Join(",", queue);
+            QueueList.Text = "Kolejka: " + String.Join(",", queue);
             axis = JohnsonAlgorithm.CreateTasksAxis(costs, queue);
             Axis1.Text = String.Join(" ", axis[0]);
             Axis2.Text = String.Join(" ", axis[1]);
             cost.Text = axis[1].Count.ToString();
             Utilities.PlayFadeAnim(SBResult);
 
+            
+
+            
+
+            //GENERATE gannt list
+            int totalDuration = 0;
+            GanttRow machine1 = new GanttRow();
+            //Machine 1
+
+         
+                for (int i = 0; i < queue.Count; i++)
+                {
+                    Gantt gantt = new Gantt(totalDuration, costs[0, queue[i]-1], queue[i].ToString());
+                    machine1.elements.Add(gantt);
+                    totalDuration += costs[0, queue[i]-1];
+                }
+                //Machine 2
+                totalDuration = 0;
+                GanttRow machine2 = new GanttRow();
+                for (int i = 0; i < queue.Count; i++)
+                {
+                    if (totalDuration > machine1.GetDurationTillEndOf(i + 1))
+                    {
+                        Gantt gantt = new Gantt(totalDuration, costs[1, queue[i]-1], queue[i].ToString());
+                        machine2.elements.Add(gantt);
+                        totalDuration += costs[1, queue[i]-1];
+                    }
+                    else
+                    {
+                        Gantt gantt = new Gantt(machine1.GetDurationTillEndOf(i + 1), costs[1, queue[i]-1], queue[i].ToString());
+                        machine2.elements.Add(gantt);
+                        totalDuration = machine1.GetDurationTillEndOf(i + 1) + costs[1, queue[i]-1];
+                    }
+
+                }
+            try
+            {
+                machine2.FillEmptySpaces();
+                machine1.header = "Masz1";
+                machine2.header = "Masz2";
+                GanttChart ganttChart = new GanttChart();
+                ganttChart.rows.Add(machine1);
+                ganttChart.rows.Add(machine2);
+                ganttChart.DrawChart(ganttGrid);
+            }
+            catch (Exception ex)
+            {
+                Utilities.showErrorMessage(ex.Message);
+            }
+            
         }
     }
 }

@@ -81,8 +81,8 @@ namespace OiM_UWP
                 }
             }
         }
-        
-        public  int GetMin()
+
+        public int GetMin()
         {
             int max = array[0, 0];
             for (int i = 0; i < array.GetLength(0); ++i)

@@ -22,7 +22,7 @@
 
                     </TransitionCollection>
                 </Grid.Transitions>
-                <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Metoda Węgierska" FontSize="24" Height="Auto"
+                <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Algorytm Johnsona" FontSize="24" Height="Auto"
                          Width="Auto" Margin="10,10,-10,-10" UseLayoutRounding="False" d:LayoutRounding="Auto">
                 </TextBlock>
                 <TextBlock Margin="15,45,15,645" TextWrapping="Wrap">Algorytm Johnsona – to algorytm służący do znajdowania najkrótszych ścieżek między parami wierzchołków. </TextBlock>
@@ -49,6 +49,12 @@
                         </Grid.ChildrenTransitions>
                     </Grid>
                 </ScrollViewer>
+                <ScrollViewer Grid.Row="3" Grid.Column="0" HorizontalScrollBarVisibility="Auto" Background="{ThemeResource SystemAccentColor}"  Margin="5" Padding="5">
+                  <RelativePanel x:Name="ganttGrid" Padding="0">
+
+                  </RelativePanel>
+                </ScrollViewer>
+
 
                 <Grid Grid.Row="0" Grid.Column="1" Background="{ThemeResource SystemAccentColor}" Margin="5">
                   <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Koszt:"/>

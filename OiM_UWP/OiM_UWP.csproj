@@ -121,6 +121,9 @@
     </Compile>
     <Compile Include="ArithmeticCoding.cs" />
     <Compile Include="ContentDialogMaker.cs" />
+    <Compile Include="Gantt.cs" />
+    <Compile Include="GanttChart.cs" />
+    <Compile Include="GanttRow.cs" />
     <Compile Include="HuffmanCoding.cs" />
     <Compile Include="HuffmanNode.cs" />
     <Compile Include="HungarianAlgorithm.cs" />
