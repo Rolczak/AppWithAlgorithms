@@ -1,5 +1,5 @@
 # Application With Algorithms
-Made with UWP (Uniwersal Widnows Platfrom) with C#. App can be easily ported to WPF. It is made for college project so it require a lot of
+Made with UWP (Uniwersal Widnows Platfrom) with C#. App can be easily ported to WPF. It was made for college project so it require a lot of
 work to be done well.
 >Most algorithms can open/save/generate(random/manually) data 
 ## App includes algorithms from discrete optimalization like:
